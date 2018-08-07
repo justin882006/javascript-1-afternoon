@@ -68,12 +68,14 @@ var devMountainClassPet = dog.name;
 
 //Add a method to dog called bark.
 //The value of bark should be a function that returns the string "Woof woof".
-
-
+function dog (bark){
+  return "Woof woof"
+};
 //Code Here
 
 //Store the result of invoking the bark method in a variable called ruff.
 
+var ruff = dog.bark;
 //Code Here
 
 //////////////////PROBLEM 6////////////////////
@@ -87,24 +89,32 @@ var devMountainClassPet = dog.name;
 
 //Return mySum.
 
+function looper(arr){
+ for (var mySum = 0; mySum <= arr.length; mySum++)
+}
+
 //Code Here
 
 //////////////////PROBLEM 7////////////////////
 
 //Given the following function called math
 
-function math(num1, num2, callback) {
+function math(num1, num2, callback) { //***************************//DIFFERENT MATHIMATICAL OPERATORS ***************************************
   return callback(num1, num2);
 }
 
 //Write a function called add that takes in two parameters and
 //returns the result of adding them together.
 
-//Code Here
+function add(num1, num2){
+  return num1 + num2;
+}
+//Code Here       //***************************//DIFFERENT MATHIMATICAL OPERATORS ***************************************
 
 //Now invoke math, passing in the numbers 3 and 4, and your add function,
 //storing the result in the variable mathSum.
 
+math(3, 4, add)
 //Code Here
 
 //////////////////PROBLEM 8////////////////////
